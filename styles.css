@@ -67,9 +67,9 @@ body {
 }
 
 .logo img {
-    width: 48px;
     height: 48px;
-    border-radius: 50%;
+    width: auto;
+    border-radius: 8px;
 }
 
 .logo-text {
@@ -376,6 +376,20 @@ body {
     color: white;
 }
 
+.process-video-container {
+    max-width: 800px;
+    margin: 0 auto 64px;
+    padding: 0 16px;
+}
+
+.process-video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background: #1f2937;
+}
+
 .process-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -559,9 +573,9 @@ body {
 }
 
 .footer-brand img {
-    width: 48px;
     height: 48px;
-    border-radius: 50%;
+    width: auto;
+    border-radius: 8px;
 }
 
 .footer-brand-text {
@@ -676,6 +690,10 @@ body {
     
     .advantages-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .process-video-container {
+        max-width: 900px;
     }
     
     .process-grid {

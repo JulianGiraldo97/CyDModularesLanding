@@ -50,6 +50,7 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
    - Diseño limpio y profesional
 
 4. **Proceso de Trabajo**
+   - Video explicativo del proceso
    - Timeline de 4 pasos
    - Fondo degradado atractivo
    - Numeración visual
@@ -120,21 +121,23 @@ Landing/
 ├── script.js           # Funcionalidades JavaScript
 ├── tailwind.config.js  # Configuración de TailwindCSS
 ├── README.md          # Documentación
-└── img/               # Imágenes del proyecto
-    ├── f.png          # Logo de la empresa
-    ├── sofa.png       # Imagen de sofá
-    ├── chair.png      # Imagen de silla
-    ├── chair2.png     # Imagen de silla 2
-    ├── dark.jpg       # Imagen de fondo oscura
-    ├── dark2.jpg      # Imagen de fondo oscura 2
-    ├── frame.jpg      # Imagen de marco
-    ├── frame1.jpg     # Imagen de marco 1
-    ├── frame3.jpg     # Imagen de marco 3
-    ├── frame4.jpg     # Imagen de marco 4
-    ├── frame5.jpg     # Imagen de marco 5
-    ├── leftLogo.jpg   # Logo izquierdo
-    ├── nav.jpg        # Imagen de navegación
-    └── sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.jpg  # Imagen hero
+├── img/               # Imágenes del proyecto
+│   ├── Logo cyd.jpg   # Logo principal de la empresa
+│   ├── sofa.png       # Imagen de sofá
+│   ├── chair.png      # Imagen de silla
+│   ├── chair2.png     # Imagen de silla 2
+│   ├── dark.jpg       # Imagen de fondo oscura
+│   ├── dark2.jpg      # Imagen de fondo oscura 2
+│   ├── frame.jpg      # Imagen de marco
+│   ├── frame1.jpg     # Imagen de marco 1
+│   ├── frame3.jpg     # Imagen de marco 3
+│   ├── frame4.jpg     # Imagen de marco 4
+│   ├── frame5.jpg     # Imagen de marco 5
+│   ├── leftLogo.jpg   # Logo izquierdo
+│   ├── nav.jpg        # Imagen de navegación
+│   └── sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.jpg  # Imagen hero
+└── video/             # Videos del proyecto
+    └── proceso.mp4    # Video del proceso de trabajo
 ```
 
 ## 🚀 Cómo Usar
