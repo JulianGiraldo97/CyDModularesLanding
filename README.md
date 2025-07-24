@@ -25,11 +25,11 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
 ## 🚀 Características de la Landing Page
 
 ### Tecnologías Utilizadas
-- **HTML5** semántico
-- **TailwindCSS** para estilos modernos
-- **JavaScript** para interacciones
+- **HTML5** semántico y bien estructurado
+- **CSS3** personalizado con diseño responsive
+- **JavaScript** vanilla para interacciones
 - **Font Awesome** para iconografía
-- **AOS (Animate On Scroll)** para animaciones
+- **Google Fonts** (Inter + Poppins) para tipografías
 
 ### Secciones Implementadas
 
@@ -90,6 +90,10 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
 - **Scroll Suave**: Navegación fluida entre secciones
 - **Animaciones**: Efectos de entrada al hacer scroll
 - **Enlaces Directos**: Integración con WhatsApp y teléfono
+- **Validación de Formularios**: Validación de email y teléfono
+- **Tracking de Eventos**: Seguimiento de interacciones del usuario
+- **Lazy Loading**: Carga optimizada de imágenes
+- **Accesibilidad**: Navegación por teclado y gestión del foco
 
 ### Integraciones
 - **WhatsApp Business**: Enlaces directos con mensaje predefinido
@@ -109,7 +113,9 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
 
 ```
 Landing/
-├── index.html          # Página principal
+├── index.html          # Página principal (HTML semántico)
+├── styles.css          # Estilos CSS personalizados
+├── script.js           # Funcionalidades JavaScript
 ├── tailwind.config.js  # Configuración de TailwindCSS
 ├── README.md          # Documentación
 └── img/               # Imágenes del proyecto
@@ -134,10 +140,11 @@ Landing/
 1. **Clonar o descargar** el proyecto
 2. **Abrir** `index.html` en un navegador web
 3. **Personalizar** el contenido según necesidades:
-   - Cambiar información de contacto
-   - Actualizar imágenes
-   - Modificar textos y servicios
-   - Ajustar colores en `tailwind.config.js`
+   - Cambiar información de contacto en `index.html`
+   - Actualizar imágenes en la carpeta `img/`
+   - Modificar textos y servicios en `index.html`
+   - Ajustar estilos en `styles.css`
+   - Modificar funcionalidades en `script.js`
 
 ## 📞 Información de Contacto
 
@@ -159,10 +166,10 @@ Buscar y reemplazar en `index.html`:
 - Ubicación: `Ciudad, Colombia`
 
 ### Modificar Colores
-Editar en `tailwind.config.js` la sección `colors.primary`
+Editar en `styles.css` las variables de color en la sección de utilidades
 
 ### Agregar Nuevas Secciones
-Seguir la estructura HTML semántica y agregar clases de TailwindCSS
+Seguir la estructura HTML semántica y agregar estilos CSS correspondientes en `styles.css`
 
 ## 📈 Optimización para Conversión
 
