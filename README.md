@@ -83,6 +83,7 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
 - **Contraste**: Colores accesibles y legibles
 - **Velocidad**: Carga rápida sin frameworks pesados
 - **SEO**: Estructura semántica optimizada
+- **Favicon**: Logo de la empresa en la pestaña del navegador
 
 ## 📱 Funcionalidades Interactivas
 
@@ -107,10 +108,11 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
 - **Primario**: `#dc2626` (Rojo)
 - **Secundario**: `#b91c1c` (Rojo oscuro)
 - **Acento**: `#fbbf24` (Amarillo dorado)
-- **Fondo Oscuro**: `#111827` (Gris muy oscuro)
-- **Fondo Secundario**: `#1f2937` (Gris oscuro)
-- **Texto Claro**: `#f9fafb` (Blanco)
-- **Texto Secundario**: `#d1d5db` (Gris claro)
+- **Fondo Principal**: `#ffffff` (Blanco)
+- **Fondo Secundario**: `#f9fafb` (Gris muy claro)
+- **Texto Principal**: `#1f2937` (Gris oscuro)
+- **Texto Secundario**: `#6b7280` (Gris medio)
+- **Footer**: `#1f2937` (Gris oscuro para contraste)
 
 ## 📁 Estructura de Archivos
 
@@ -155,10 +157,10 @@ Landing/
 
 - **Teléfono**: +57 300 123 4567
 - **Email**: info@cydmodulares.com
-- **Ubicación**: Ciudad, Colombia
+- **Ubicación**: Armenia, Quindío, Colombia
 - **Horarios**: 
-  - Lunes - Viernes: 8:00 AM - 6:00 PM
-  - Sábados: 9:00 AM - 2:00 PM
+  - Lunes - Viernes: 8:00 AM - 5:00 PM
+  - Sábados: 8:00 AM - 1:00 PM
   - Domingos: Cerrado
 
 ## 🔧 Personalización
@@ -168,10 +170,10 @@ Buscar y reemplazar en `index.html`:
 - Número de WhatsApp: `573001234567`
 - Número de teléfono: `+573001234567`
 - Email: `info@cydmodulares.com`
-- Ubicación: `Ciudad, Colombia`
+- Ubicación: `Armenia, Quindío, Colombia`
 
 ### Modificar Colores
-Editar en `styles.css` las variables de color en la sección de utilidades. La paleta actual usa rojo como color principal con fondos oscuros.
+Editar en `styles.css` las variables de color en la sección de utilidades. La paleta actual usa rojo como color principal con fondos claros y blancos.
 
 ### Agregar Nuevas Secciones
 Seguir la estructura HTML semántica y agregar estilos CSS correspondientes en `styles.css`

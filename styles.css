@@ -8,8 +8,8 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #e5e7eb;
-    background-color: #111827;
+    color: #374151;
+    background-color: #ffffff;
 }
 
 /* ===== SCROLLBAR PERSONALIZADA ===== */
@@ -18,7 +18,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1f2937;
+    background: #f3f4f6;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -48,15 +48,15 @@ body {
     width: 100%;
     top: 0;
     z-index: 50;
-    background: rgba(17, 24, 39, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .header.scrolled {
-    background: rgba(17, 24, 39, 0.98);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -78,7 +78,7 @@ body {
 }
 
 .logo-text-primary {
-    color: #f9fafb;
+    color: #1f2937;
 }
 
 .logo-text-accent {
@@ -91,7 +91,7 @@ body {
 }
 
 .nav-desktop a {
-    color: #d1d5db;
+    color: #374151;
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 500;
@@ -117,7 +117,7 @@ body {
     display: block;
     background: none;
     border: none;
-    color: #d1d5db;
+    color: #374151;
     font-size: 1.25rem;
     cursor: pointer;
     padding: 8px;
@@ -140,7 +140,7 @@ body {
 }
 
 .mobile-menu a {
-    color: #d1d5db;
+    color: #374151;
     text-decoration: none;
     transition: color 0.3s ease;
     padding: 8px 0;
@@ -265,20 +265,20 @@ body {
 .section-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #f9fafb;
+    color: #1f2937;
     margin-bottom: 16px;
 }
 
 .section-subtitle {
     font-size: 1.25rem;
-    color: #9ca3af;
+    color: #6b7280;
     max-width: 512px;
     margin: 0 auto;
 }
 
 /* ===== SERVICIOS ===== */
 .services {
-    background: #1f2937;
+    background: #f9fafb;
 }
 
 .services-grid {
@@ -291,17 +291,17 @@ body {
 }
 
 .service-card {
-    background: #374151;
+    background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     padding: 24px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid #4b5563;
+    border: 1px solid #e5e7eb;
 }
 
 .service-card:hover {
-    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.1);
     transform: translateY(-4px);
     border-color: #dc2626;
 }
@@ -322,12 +322,12 @@ body {
 .service-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #f9fafb;
+    color: #1f2937;
     margin-bottom: 12px;
 }
 
 .service-description {
-    color: #d1d5db;
+    color: #6b7280;
     line-height: 1.6;
 }
 
@@ -361,18 +361,22 @@ body {
 .advantage-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #f9fafb;
+    color: #1f2937;
     margin-bottom: 12px;
 }
 
 .advantage-description {
-    color: #d1d5db;
+    color: #6b7280;
     line-height: 1.6;
 }
 
 /* ===== PROCESO ===== */
 .process {
     background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+}
+
+.process .section-subtitle {
     color: white;
 }
 
@@ -387,7 +391,7 @@ body {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    background: #1f2937;
+    background: white;
 }
 
 .process-grid {
@@ -430,7 +434,7 @@ body {
 
 /* ===== TESTIMONIOS ===== */
 .testimonials {
-    background: #1f2937;
+    background: #f9fafb;
 }
 
 .testimonials-grid {
@@ -443,16 +447,16 @@ body {
 }
 
 .testimonial-card {
-    background: #374151;
+    background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     padding: 32px;
     transition: all 0.3s ease;
-    border: 1px solid #4b5563;
+    border: 1px solid #e5e7eb;
 }
 
 .testimonial-card:hover {
-    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.1);
     border-color: #dc2626;
 }
 
@@ -477,16 +481,16 @@ body {
 
 .testimonial-author {
     font-weight: 600;
-    color: #f9fafb;
+    color: #1f2937;
 }
 
 .testimonial-role {
-    color: #9ca3af;
+    color: #6b7280;
     font-size: 0.875rem;
 }
 
 .testimonial-text {
-    color: #d1d5db;
+    color: #6b7280;
     line-height: 1.6;
     margin-bottom: 16px;
 }
@@ -502,6 +506,10 @@ body {
     background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
     color: white;
     text-align: center;
+}
+
+.cta-section .section-subtitle {
+    color: white;
 }
 
 .cta-buttons {
@@ -547,7 +555,7 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: #111827;
+    background: #1f2937;
     color: white;
     padding: 48px 0 24px;
 }

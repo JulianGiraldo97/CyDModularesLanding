@@ -37,7 +37,7 @@ module.exports = {
                 }
             },
             backgroundImage: {
-                'hero-pattern': "url('/img/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.jpg')",
+                'hero-pattern': "url('/img/cocina-2.jpg')",
             }
         },
     },
