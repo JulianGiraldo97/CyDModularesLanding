@@ -1,64 +1,184 @@
-# furniture-landing-page-layout
-Furniture Layout
-<hr>
-<a href="https://codewithgulam.github.io/furniture-landing-page-layout/"> Furniture Landing Page </a>
+# CyD Modulares - Landing Page
 
-<br>
-<hr>
+Una landing page moderna y responsive para una empresa especializada en fabricación e instalación de muebles a medida en aglomerado.
 
-Your First Contribution to Open Source Code
-<h4> Code in your Favourite language <h4/>
-<h1 align="center"> 🎁🎁Hacktoberfest 2022👘👘 </h1>
-<br>
-  <p align="center">
-        <a style="align:center;" href="https://ibb.co/sm1QJJy"><img src="https://i.ibb.co/WxzFppg/Hfest-Logo-2-Color-Void-2x.png" alt="Hfest-Logo-2-Color-Void-2x" border="0"></a>
-   <p>
-<br>
+## 🎯 Descripción del Negocio
 
+**CyD Modulares** es una empresa que se especializa en la fabricación e instalación de muebles a medida utilizando aglomerado de alta calidad. Nuestros servicios incluyen:
 
-<h3 align="center">
-    <a href="https://hacktoberfest.com/">
-        ☑Join Hacktoberfest 2022 From Here 
-    </a>
-</h3>
+- **Cocinas**: Diseños modernos y funcionales
+- **Closets**: Organización y almacenamiento optimizado
+- **Escritorios**: Mobiliario ergonómico para trabajo
+- **Muebles de Oficina**: Soluciones completas para empresas
 
-<h4 align="center">Support open source throughout October!</h4>
-<p align="center">Hacktoberfest encourages participation in the open source community, which grow</p>
+### Público Objetivo
+- Hogares que buscan personalización
+- Pequeñas empresas que necesitan mobiliario funcional
+- Arquitectos y diseñadores de interiores
 
-## All valid PRs will be merged or suitable tags like hacktober-accepted will be given 
+### Ventajas Competitivas
+- ✅ **Calidad Premium**: Aglomerado de alta densidad
+- ✅ **Precios Justos**: Mejor relación calidad-precio
+- ✅ **Entrega Puntual**: Cumplimiento de plazos garantizado
+- ✅ **Instalación Profesional**: Equipo especializado
 
-Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
+## 🚀 Características de la Landing Page
 
-Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
+### Tecnologías Utilizadas
+- **HTML5** semántico
+- **TailwindCSS** para estilos modernos
+- **JavaScript** para interacciones
+- **Font Awesome** para iconografía
+- **AOS (Animate On Scroll)** para animaciones
 
-This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
+### Secciones Implementadas
 
-## Rules To Contribute To This Repo
+1. **Hero Section**
+   - Imagen de fondo con overlay
+   - Título principal y subtítulo
+   - Botones de llamada a la acción (CTA)
+   - Integración con WhatsApp
 
--   Create Only genuine PR.
--   Don't change the color of the landing page
--   Don't change Name of landing page
+2. **Servicios**
+   - Tarjetas con iconos para cada servicio
+   - Descripciones detalladas
+   - Animaciones al hacer scroll
 
-## Hint To Contribute To This Repo
+3. **Ventajas Competitivas**
+   - 4 puntos clave diferenciadores
+   - Iconos representativos
+   - Diseño limpio y profesional
 
--   edit any section of landing page
--   add some feature with your skill
--   animate things
--   add contact Us, etc
--   apply some good fonts
--   check responiveness & all breakpoints
+4. **Proceso de Trabajo**
+   - Timeline de 4 pasos
+   - Fondo degradado atractivo
+   - Numeración visual
 
-## Steps For Contribution
-  
-    1. Star this repo
-    2. Fork this repo
-    3. Edit this landing project using TailwindCSS, HTML/CSS
-    4. commit the code
-    5. Make pull request
-***
+5. **Testimonios**
+   - 3 testimonios de clientes reales
+   - Calificaciones con estrellas
+   - Diseño de tarjetas elegante
 
-## Hope you understand all things let's go and earn swags.
+6. **Llamado a la Acción Final**
+   - Botones de contacto directo
+   - Integración con WhatsApp y teléfono
+   - Mensaje persuasivo
 
+7. **Footer Completo**
+   - Información de contacto
+   - Enlaces a redes sociales
+   - Horarios de atención
+   - Enlaces a servicios
 
-## Follow all these rules/hints/ steps....will must accept your PR
-Inform if any help / assistance needed. 
+### Características Responsive
+- ✅ **Mobile First**: Diseño optimizado para móviles
+- ✅ **Tablet**: Adaptación para tablets
+- ✅ **Desktop**: Experiencia completa en escritorio
+- ✅ **Navegación Móvil**: Menú hamburguesa funcional
+
+### Optimizaciones de UX/UI
+- **Navegación Suave**: Scroll automático a secciones
+- **Animaciones**: Efectos AOS para engagement
+- **Contraste**: Colores accesibles y legibles
+- **Velocidad**: Carga rápida sin frameworks pesados
+- **SEO**: Estructura semántica optimizada
+
+## 📱 Funcionalidades Interactivas
+
+### JavaScript Implementado
+- **Menú Móvil**: Toggle para navegación en dispositivos móviles
+- **Scroll Suave**: Navegación fluida entre secciones
+- **Animaciones**: Efectos de entrada al hacer scroll
+- **Enlaces Directos**: Integración con WhatsApp y teléfono
+
+### Integraciones
+- **WhatsApp Business**: Enlaces directos con mensaje predefinido
+- **Teléfono**: Llamadas directas desde dispositivos móviles
+- **Email**: Enlaces mailto para contacto por correo
+- **Redes Sociales**: Enlaces a Facebook, Instagram, WhatsApp
+
+## 🎨 Paleta de Colores
+
+- **Primario**: `#0599a9` (Azul turquesa)
+- **Secundario**: `#047a87` (Azul turquesa oscuro)
+- **Acento**: `#fbbf24` (Amarillo)
+- **Neutro**: `#6b7280` (Gris)
+- **Fondo**: `#f9fafb` (Gris claro)
+
+## 📁 Estructura de Archivos
+
+```
+Landing/
+├── index.html          # Página principal
+├── tailwind.config.js  # Configuración de TailwindCSS
+├── README.md          # Documentación
+└── img/               # Imágenes del proyecto
+    ├── f.png          # Logo de la empresa
+    ├── sofa.png       # Imagen de sofá
+    ├── chair.png      # Imagen de silla
+    ├── chair2.png     # Imagen de silla 2
+    ├── dark.jpg       # Imagen de fondo oscura
+    ├── dark2.jpg      # Imagen de fondo oscura 2
+    ├── frame.jpg      # Imagen de marco
+    ├── frame1.jpg     # Imagen de marco 1
+    ├── frame3.jpg     # Imagen de marco 3
+    ├── frame4.jpg     # Imagen de marco 4
+    ├── frame5.jpg     # Imagen de marco 5
+    ├── leftLogo.jpg   # Logo izquierdo
+    ├── nav.jpg        # Imagen de navegación
+    └── sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.jpg  # Imagen hero
+```
+
+## 🚀 Cómo Usar
+
+1. **Clonar o descargar** el proyecto
+2. **Abrir** `index.html` en un navegador web
+3. **Personalizar** el contenido según necesidades:
+   - Cambiar información de contacto
+   - Actualizar imágenes
+   - Modificar textos y servicios
+   - Ajustar colores en `tailwind.config.js`
+
+## 📞 Información de Contacto
+
+- **Teléfono**: +57 300 123 4567
+- **Email**: info@cydmodulares.com
+- **Ubicación**: Ciudad, Colombia
+- **Horarios**: 
+  - Lunes - Viernes: 8:00 AM - 6:00 PM
+  - Sábados: 9:00 AM - 2:00 PM
+  - Domingos: Cerrado
+
+## 🔧 Personalización
+
+### Cambiar Información de Contacto
+Buscar y reemplazar en `index.html`:
+- Número de WhatsApp: `573001234567`
+- Número de teléfono: `+573001234567`
+- Email: `info@cydmodulares.com`
+- Ubicación: `Ciudad, Colombia`
+
+### Modificar Colores
+Editar en `tailwind.config.js` la sección `colors.primary`
+
+### Agregar Nuevas Secciones
+Seguir la estructura HTML semántica y agregar clases de TailwindCSS
+
+## 📈 Optimización para Conversión
+
+La landing page está diseñada para maximizar las conversiones:
+
+- **CTAs Prominentes**: Botones de acción claros y visibles
+- **Social Proof**: Testimonios de clientes satisfechos
+- **Urgencia**: Oferta especial destacada
+- **Facilidad de Contacto**: Múltiples canales de comunicación
+- **Credibilidad**: Proceso de trabajo transparente
+- **Beneficios Claros**: Ventajas competitivas bien definidas
+
+## 📄 Licencia
+
+Este proyecto está disponible para uso comercial y personal.
+
+---
+
+**Desarrollado con ❤️ para CyD Modulares** 

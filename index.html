@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,237 +7,483 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/f.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="img/f.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Furniture Website</title>
+    <title>CyD Modulares - Muebles a Medida en Aglomerado</title>
     <style>
-        /* width */
-        
-         ::-webkit-scrollbar {
-            width: 10px;
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        /* Track */
-        
-         ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey;
-            border-radius: 10px;
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
         }
-        /* Handle */
-        
-         ::-webkit-scrollbar-thumb {
+        ::-webkit-scrollbar-thumb {
             background: #0599a9;
             border-radius: 10px;
         }
-        /* Handle on hover */
-        
-         ::-webkit-scrollbar-thumb:hover {
-            background: darkgoldenrod
+        ::-webkit-scrollbar-thumb:hover {
+            background: #047a87;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0599a9 0%, #047a87 100%);
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(5, 153, 169, 0.9), rgba(4, 122, 135, 0.9)), url('img/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
 
-<body>
-
-
-
-    <header class="text-white body-font bg-[#0599a9]">
-        <div class="container  mx-auto flex flex-wrap p-5 flex-col md:flex-row justify-center items-center">
-            <a class="flex title-font  font-medium items-center text-white mb-4 md:mb-0">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> -->
-                </svg>
-                <!--    <img class="w-12 rounded-full" src="/img/f.png" alt=""> -->
-                <img class="w-12 rounded-full" src="https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/f.png" alt="logo">
-
-                <span class="ml-3 text-xl ">Web<span class="text-yellow-400 font-bold italic ">Nature</span></span>
-
-            </a>
-            <nav class=" md:ml-4 md:py-1 md:pl-4 md:border-l md:border-white flex flex-wrap space-x-6 font-serif items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900">Sofa</a>
-                <a class="mr-5 hover:text-gray-900">Bedroom</a>
-                <a class="mr-5 hover:text-gray-900">Decor</a>
-                <a class="mr-5 hover:text-gray-900">Dining</a>
-                <a class="mr-5 hover:text-gray-900">Matresses</a>
-                <a class="mr-5 hover:text-gray-900">Storage</a>
-                <a class="mr-5 hover:text-gray-900">Living</a>
-                <a class="mr-5 hover:text-gray-900">Table</a>
+<body class="font-['Inter']">
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="img/f.png" alt="CyD Modulares" class="w-12 h-12 rounded-full">
+                    <div>
+                        <span class="text-xl font-bold text-gray-800">CyD</span>
+                        <span class="text-xl font-bold text-[#0599a9]">Modulares</span>
+                    </div>
+                </a>
                 
-    
-              <a class="mr-5 hover:text-gray-900">New Arrivals</a>
-                <a class="mr-5 hover:text-gray-900">Contact us</a>
-            </nav>
-            <!-- <button class="inline-flex items-center bord bg-[#0599a9] er-0 py-1 px-3 focus:outline-none hover:bg-yellow-600 rounded text-base mt-4 md:mt-0">LogIn
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button> -->
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-[#0599a9] transition-colors">Inicio</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-[#0599a9] transition-colors">Servicios</a>
+                    <a href="#ventajas" class="text-gray-700 hover:text-[#0599a9] transition-colors">Ventajas</a>
+                    <a href="#proceso" class="text-gray-700 hover:text-[#0599a9] transition-colors">Proceso</a>
+                    <a href="#contacto" class="bg-[#0599a9] text-white px-6 py-2 rounded-full hover:bg-[#047a87] transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <nav class="flex flex-col space-y-4">
+                    <a href="#inicio" class="text-gray-700 hover:text-[#0599a9] transition-colors">Inicio</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-[#0599a9] transition-colors">Servicios</a>
+                    <a href="#ventajas" class="text-gray-700 hover:text-[#0599a9] transition-colors">Ventajas</a>
+                    <a href="#proceso" class="text-gray-700 hover:text-[#0599a9] transition-colors">Proceso</a>
+                    <a href="#contacto" class="bg-[#0599a9] text-white px-6 py-2 rounded-full hover:bg-[#047a87] transition-colors text-center">Contacto</a>
+                </nav>
+            </div>
         </div>
     </header>
-    <hr class="border-gray-500">
-    <section class="bg-[#0599a9] px-4 py-4">
-        <div class="flex justify-center flex-col m-auto md:flex-row-reverse px-4 py-4 ">
 
-            <div class="sofa w-fit flex mr-auto ">
-                <!--    <img src="/img/sofa.png" class="" alt="sofa image"> -->
-                <img src="https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/sofa.png" class="" alt="sofa image">
-
-            </div>
-
-            <div class=" flex md:justify-center flex-col w-fit md:w-80 m-auto justify-around text-white  md:py-4 mt-10  ">
-                <div>
-                    <span class="bg-yellow-500 w-fit rounded-full px-3 text-sm">SALE OFF</span>
-                    <h2 class="font-bold  text-2xl md:text-3xl  leading-6">Beautify your home</h2>
-                </div>
-                <div>
-                    <p class=" text-justify  mt-3 my-5 text-slate-100 text-sm">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, veniam? dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis. elit. Dignissimos, at!</p>
-
-                </div>
-                <div>
-                    <button class="border-black w-fit  text-black bg-yellow-300 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 hover:border-black rounded text-lg"><span>Lets
-                            Order Your</span><span>&#8594;</span> </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class=" ">
-
-        <div class="m-6 my-20  space-y-10 md:space-y-0 flex flex-col md:justify-evenly md:flex-row h-1/2">
-            <div class="flex border-2 bg-[#dae1e7] w-fit space-x-3  items-center rounded-lg">
-                <!--     <img src="/img/chair.png" class="w-36 md:w-52" alt=""> -->
-                <img src="https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/chair.png" class="w-36 md:w-52" alt="">
-
-                <div class="flex flex-col space-y-3 w-52 m-auto flex-wrap mx-10">
-                    <div class="leading-3">
-                        <span class="text-red-500 font-bold w-fit rounded-full text-xs text-left ">OPEN SALE</span>
-                        <h3 class="text-red tracking-tight text-lg">Soufas & Louges</h3>
-                    </div>
-                    <button class="border-black w-fit text-xs text-white bg-red-400 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 hover:border-black rounded md:text-lg" ">Explore</button>
-                </div>
-            </div>
-            <div class=" flex bg-[#fcebea] flex-row-reverse md:mx-18 w-fit space-x-3 items-center rounded-lg ">
-                                                                                                              
-             <!--   <img src="/img/chair2.png " class=" w-36 md:w-52 " alt=" "> -->
-                                                                              
-                <img src="https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/chair2.png " class="w-36 md:w-52 " alt=" ">
-                
-                <div class=" flex flex-col space-y-3 w-52 m-auto flex-wrap mx-20 ">
-                    <div class=" leading-3 ">
-                        <span class=" text-red-500 font-bold w-fit rounded-full text-xs text-left ">OPEN SALE</span>
-                        <h3 class=" text-red tracking-tight text-lg ">Soufas & Louges</h3>
-                    </div>
-                    <button class=" border-black w-fit text-slate-100 text-white bg-red-400 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 hover:border-black rounded md:text-lg " ">Explore</button>
-                </div>
-            </div>
-        </div>
-
-        <h1 class="text-center text-2xl font-bold  m-10">One Place For all Your Needs</h1>
-        <section class="flex flex-col md:flex-row justify-center space-y-5 md:space-y-0 md:space-x-5 items-center mb-10 md:m-20 text-white text-lg uppercase">
-            <div style="background-image: url('https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/frame1.jpg');" class=" border-2 brightness-75  h-80 rounded-lg w-60 bg-cover bg-no-repeat border-black 
-            transition ease-in-out delay-75  hover:-translate-y-16 hover:scale-110  duration-300
-
-            ">
-                <p class="text-center">Beds</p>
-            </div>
-            <div style="background-image: url('https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/dark2.jpg');" class=" border-2  brightness-75 h-80 rounded-lg w-60 bg-cover bg-no-repeat border-black 
-            transition ease-in-out delay-150  hover:-translate-x-16 hover:scale-110  duration-300
-            ">
-                <p class="text-center">Sofa</p>
-            </div>
-            <div style="background-image: url('https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/frame3.jpg');" class=" border-2 brightness-75 h-80 rounded-lg w-60 bg-cover bg-no-repeat border-black 
-            transition ease-in-out delay-150  hover:-translate-y-16 hover:scale-110  duration-300
-            ">
-                <p class="text-center">Interior Design</p>
-            </div>
-            <div style="background-image: url('https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/frame4.jpg');" class=" border-2 h-80 brightness-75 rounded-lg w-60 bg-cover bg-no-repeat border-black 
-            transition ease-in-out delay-150  hover:-translate-y-16 hover:scale-110  duration-300
-            ">
-                <p class="text-center brightness-75">Chair</p>
-            </div>
-            <!-- <div style="background-image: url('https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/frame4.jpg');" class=" border-2 brightness-75  h-80 rounded-lg w-60 bg-cover bg-no-repeat border-black 
-            transition ease-in-out delay-150  hover:-translate-x-16 hover:scale-110  duration-300
-            ">
-                <p class="text-center">Chair</p>
-            </div> -->
-            <div style="background-image: url('https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/frame5.jpg');" class=" border-2  brightness-75  h-80 rounded-lg w-60 bg-cover bg-no-repeat border-black 
-            transition ease-in-out delay-150  hover:-translate-y-16 hover:scale-110  duration-300
-            ">
-                <p class="text-center">Bedroom</p>
-            </div>
-        </section>
-
-    </section>
-    <section class=" py-5 px-5 bg-[#0599a9] h-fit">
-        <h1 class="md:text-6xl  text-3xl capitalize font-bold text-center text-white font-mono pt-5" style="font-family: 'Montserrat', sans-serif;">Let Us Connect together!
-        </h1>
-        <p class="text-center text-white mt-5 mb-5 md:mt-20  capitalize text-xl md:text-3xl" style="font-family: 'Inter Tight', sans-serif;">Contact Us</p>
-
-        <div class="flex flex-col md:flex-row space-y-5 md:m-20 md:space-y-0 md:space-x-5 items-center  justify-center">
-            <div class="flex md:flex-col items-center">
-                <a href=""><i class="fa fa-mobile fa-3x hover:text-white"></i></a>
-                <span>Call Us</span>
-            </div>
-            <div class="flex items-center md:flex-col  space-x-2">
-                <a href="#"><i class="fa fa-whatsapp fa-3x hover:text-white"></i></a>
-                <span>Whatsapp</span>
-            </div>
-            <div class="flex items-center md:flex-col  space-x-2">
-                <a href="#"><i class="fa fa-instagram fa-3x hover:text-white"></i></a>
-                <span>Instagram</span>
-            </div>
-            <div class="flex items-center md:flex-col  space-x-2">
-                <a href="#"><i class="fa fa-facebook fa-3x hover:text-white"></i></a>
-                <span>Facebook</span>
-            </div>
-
-        </div>
-        <hr>
-        <footer class="text-gray-600 body-font">
-            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                    <img class="w-12 rounded-full" src="https://raw.githubusercontent.com/codewithgulam/furniture-landing-page-layout/main/img/f.png" alt="some error occured">
-                    <!-- <span class="ml-3 text-xl">Tailblocks</span> -->
-                    <span class="ml-3 text-xl ">Web<span class="text-yellow-400 font-bold italic ">Nature</span></span>
-
-                </a>
-                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 —
-                    <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Rabs-Pvt Ltd</a>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-white pt-20">
+        <div class="container mx-auto px-4 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <span class="bg-yellow-400 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold mb-6 inline-block">
+                    ¡OFERTA ESPECIAL!
+                </span>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Muebles a Medida
+                    <span class="block text-yellow-400">que Transforman tu Espacio</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-100">
+                    Fabricamos e instalamos cocinas, closets, escritorios y muebles para oficina en aglomerado de alta calidad. 
+                    Personalización total, durabilidad garantizada y precios competitivos.
                 </p>
-                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <a class="text-gray-500">
-                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-gray-500">
-                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                  </svg>
-                </a>
-              </span>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contacto" class="bg-yellow-400 text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition-colors text-lg">
+                        Solicitar Cotización
+                    </a>
+                    <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20sus%20muebles%20a%20medida" 
+                       class="bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-colors text-lg">
+                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                    </a>
+                </div>
             </div>
-        </footer>
+        </div>
     </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestros Servicios</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Especialistas en fabricación e instalación de muebles a medida para hogares y pequeñas empresas
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cocinas -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-[#0599a9] rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-utensils text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Cocinas</h3>
+                    <p class="text-gray-600 text-center">
+                        Cocinas modernas y funcionales con diseño personalizado, acabados de calidad y máxima durabilidad.
+                    </p>
+                </div>
+
+                <!-- Closets -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-[#0599a9] rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-door-open text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Closets</h3>
+                    <p class="text-gray-600 text-center">
+                        Closets organizados y espaciosos que maximizan el almacenamiento y mantienen tu ropa ordenada.
+                    </p>
+                </div>
+
+                <!-- Escritorios -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-[#0599a9] rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-desktop text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Escritorios</h3>
+                    <p class="text-gray-600 text-center">
+                        Escritorios ergonómicos y funcionales para tu espacio de trabajo, con diseño moderno y práctico.
+                    </p>
+                </div>
+
+                <!-- Muebles de Oficina -->
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-[#0599a9] rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-building text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Muebles de Oficina</h3>
+                    <p class="text-gray-600 text-center">
+                        Mobiliario completo para oficinas que combina funcionalidad, comodidad y diseño profesional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventajas Competitivas -->
+    <section id="ventajas" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">¿Por qué Elegirnos?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Nuestras ventajas competitivas nos distinguen en el mercado
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-star text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Calidad Premium</h3>
+                    <p class="text-gray-600">
+                        Utilizamos aglomerado de alta densidad y acabados superiores que garantizan durabilidad y belleza.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-dollar-sign text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Precios Justos</h3>
+                    <p class="text-gray-600">
+                        Ofrecemos la mejor relación calidad-precio del mercado, sin comprometer la excelencia en nuestros productos.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-clock text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Entrega Puntual</h3>
+                    <p class="text-gray-600">
+                        Cumplimos con los plazos acordados. Tu tiempo es valioso y lo respetamos al máximo.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-tools text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Instalación Profesional</h3>
+                    <p class="text-gray-600">
+                        Nuestro equipo especializado se encarga de la instalación completa, garantizando un resultado perfecto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Trabajo -->
+    <section id="proceso" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestro Proceso de Trabajo</h2>
+                <p class="text-xl text-gray-100 max-w-2xl mx-auto">
+                    Un proceso simple y eficiente desde la idea hasta la instalación
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-[#0599a9] font-bold text-2xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Consulta y Diseño</h3>
+                    <p class="text-gray-100">
+                        Evaluamos tus necesidades y creamos un diseño personalizado que se adapte a tu espacio y estilo.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-[#0599a9] font-bold text-2xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cotización</h3>
+                    <p class="text-gray-100">
+                        Te presentamos una cotización detallada con precios transparentes y sin sorpresas ocultas.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-[#0599a9] font-bold text-2xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Fabricación</h3>
+                    <p class="text-gray-100">
+                        Fabricamos tu mueble con materiales de primera calidad y acabados profesionales en nuestro taller.
+                    </p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <span class="text-[#0599a9] font-bold text-2xl">4</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Instalación</h3>
+                    <p class="text-gray-100">
+                        Instalamos tu mueble en el lugar acordado, asegurando un montaje perfecto y funcional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Lo que Dicen Nuestros Clientes</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Experiencias reales de clientes satisfechos con nuestros muebles
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#0599a9] rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">M</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">María González</h4>
+                            <p class="text-gray-600 text-sm">Propietaria de Casa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Excelente trabajo en mi cocina. El diseño es perfecto y la calidad superó mis expectativas. 
+                        La instalación fue impecable y el precio muy justo."
+                    </p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#0599a9] rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">C</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Carlos Rodríguez</h4>
+                            <p class="text-gray-600 text-sm">Empresario</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Contraté los muebles para mi oficina y quedé muy satisfecho. 
+                        El equipo fue profesional, cumplieron los plazos y el resultado es espectacular."
+                    </p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#0599a9] rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">A</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ana Martínez</h4>
+                            <p class="text-gray-600 text-sm">Arquitecta</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Como arquitecta, soy muy exigente con los acabados. CyD Modulares no solo cumplió, 
+                        sino que superó mis expectativas. Altamente recomendados."
+                    </p>
+                    <div class="flex text-yellow-400 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para Transformar tu Espacio?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Contáctanos hoy mismo y recibe una cotización personalizada sin compromiso
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/573001234567?text=Hola,%20me%20interesan%20sus%20muebles%20a%20medida.%20¿Podrían%20darme%20más%20información?" 
+                       class="bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-colors text-lg">
+                        <i class="fab fa-whatsapp mr-2"></i>Contactar por WhatsApp
+                    </a>
+                    <a href="tel:+573001234567" 
+                       class="bg-white text-[#0599a9] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors text-lg">
+                        <i class="fas fa-phone mr-2"></i>Llamar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="img/f.png" alt="CyD Modulares" class="w-12 h-12 rounded-full">
+                        <div>
+                            <span class="text-xl font-bold">CyD</span>
+                            <span class="text-xl font-bold text-[#0599a9]">Modulares</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Especialistas en muebles a medida en aglomerado de alta calidad para hogares y empresas.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-[#0599a9] transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-[#0599a9] transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-[#0599a9] transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-[#0599a9] transition-colors">Cocinas</a></li>
+                        <li><a href="#" class="hover:text-[#0599a9] transition-colors">Closets</a></li>
+                        <li><a href="#" class="hover:text-[#0599a9] transition-colors">Escritorios</a></li>
+                        <li><a href="#" class="hover:text-[#0599a9] transition-colors">Muebles de Oficina</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 text-[#0599a9]"></i>
+                            <a href="tel:+573001234567">+57 300 123 4567</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-[#0599a9]"></i>
+                            <a href="mailto:info@cydmodulares.com">info@cydmodulares.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-[#0599a9]"></i>
+                            Ciudad, Colombia
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Horarios</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Lunes - Viernes: 8:00 AM - 6:00 PM</li>
+                        <li>Sábados: 9:00 AM - 2:00 PM</li>
+                        <li>Domingos: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 CyD Modulares. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
     </script>
 </body>
 
