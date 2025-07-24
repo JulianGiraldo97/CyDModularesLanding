@@ -103,11 +103,13 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
 
 ## 🎨 Paleta de Colores
 
-- **Primario**: `#0599a9` (Azul turquesa)
-- **Secundario**: `#047a87` (Azul turquesa oscuro)
-- **Acento**: `#fbbf24` (Amarillo)
-- **Neutro**: `#6b7280` (Gris)
-- **Fondo**: `#f9fafb` (Gris claro)
+- **Primario**: `#dc2626` (Rojo)
+- **Secundario**: `#b91c1c` (Rojo oscuro)
+- **Acento**: `#fbbf24` (Amarillo dorado)
+- **Fondo Oscuro**: `#111827` (Gris muy oscuro)
+- **Fondo Secundario**: `#1f2937` (Gris oscuro)
+- **Texto Claro**: `#f9fafb` (Blanco)
+- **Texto Secundario**: `#d1d5db` (Gris claro)
 
 ## 📁 Estructura de Archivos
 
@@ -166,7 +168,7 @@ Buscar y reemplazar en `index.html`:
 - Ubicación: `Ciudad, Colombia`
 
 ### Modificar Colores
-Editar en `styles.css` las variables de color en la sección de utilidades
+Editar en `styles.css` las variables de color en la sección de utilidades. La paleta actual usa rojo como color principal con fondos oscuros.
 
 ### Agregar Nuevas Secciones
 Seguir la estructura HTML semántica y agregar estilos CSS correspondientes en `styles.css`
