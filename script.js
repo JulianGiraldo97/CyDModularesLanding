@@ -1,12 +1,6 @@
 // ===== CONFIGURACIÓN INICIAL =====
-document.addEventListener('DOMContentLoaded', function() {
-    // Inicializar todas las funcionalidades
-    initMobileMenu();
-    initSmoothScrolling();
-    initScrollEffects();
-    initAnimations();
-    initContactLinks();
-});
+// La inicialización completa se encuentra al final del archivo para
+// garantizar que todas las funciones estén definidas antes de ejecutarse.
 
 // ===== MENÚ MÓVIL =====
 function initMobileMenu() {
