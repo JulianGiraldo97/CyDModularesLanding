@@ -264,6 +264,9 @@ function initContactForm() {
             }
         });
     }
+// Export for testing in Node environments
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports.formatPhoneNumber = formatPhoneNumber;
 }
 
 // ===== FUNCIONES DE TRACKING =====
