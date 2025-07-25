@@ -1,4 +1,4 @@
-const { formatPhoneNumber } = require('../script.js');
+const { formatPhoneNumber } = require('../formatPhoneNumber.js');
 
 describe('formatPhoneNumber', () => {
   test('formats 10-digit Colombian numbers', () => {
