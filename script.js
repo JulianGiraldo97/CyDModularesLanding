@@ -234,6 +234,11 @@ function formatPhoneNumber(phone) {
     return phone;
 }
 
+// Export for testing in Node environments
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports.formatPhoneNumber = formatPhoneNumber;
+}
+
 // ===== FUNCIONES DE TRACKING =====
 
 // Función para trackear eventos
