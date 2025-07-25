@@ -553,6 +553,36 @@ body {
     transform: translateY(-2px);
 }
 
+/* ===== CONTACT FORM ===== */
+.contact-form-section {
+    background: #f9fafb;
+}
+
+.contact-form {
+    display: grid;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #374151;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background: #1f2937;

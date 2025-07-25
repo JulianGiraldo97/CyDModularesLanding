@@ -234,6 +234,36 @@ function formatPhoneNumber(phone) {
     return phone;
 }
 
+// Inicializar formulario de contacto
+function initContactForm() {
+    const form = document.getElementById('contactForm');
+    if (form) {
+        const phoneInput = form.querySelector('#phone');
+        if (phoneInput) {
+            phoneInput.addEventListener('blur', function() {
+                this.value = formatPhoneNumber(this.value);
+            });
+        }
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const data = {
+                name: form.name.value,
+                email: form.email.value,
+                phone: form.phone.value
+            };
+
+            const errors = validateForm(data);
+
+            if (errors.length > 0) {
+                showMessage(errors.join('\n'), 'error');
+            } else {
+                showMessage('\u00a1Mensaje enviado con \u00e9xito!');
+                form.reset();
+            }
+        });
+    }
 // Export for testing in Node environments
 if (typeof module !== 'undefined' && module.exports) {
     module.exports.formatPhoneNumber = formatPhoneNumber;
@@ -364,6 +394,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollEffects();
     initAnimations();
     initContactLinks();
+    initContactForm();
     initCTATracking();
     initLazyLoading();
     initKeyboardNavigation();
