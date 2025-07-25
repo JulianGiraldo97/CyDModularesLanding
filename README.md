@@ -70,7 +70,11 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
    - Validación en el navegador con mensajes de error
    - Botón de envío estilizado
 
-8. **Footer Completo**
+8. **Mapa de Ubicación**
+   - Mapa interactivo con nuestra dirección
+   - Enlace directo para abrir en Google Maps
+
+9. **Footer Completo**
    - Información de contacto
    - Enlaces a redes sociales
    - Horarios de atención
