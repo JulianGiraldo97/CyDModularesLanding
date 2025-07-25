@@ -65,7 +65,12 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
    - Integración con WhatsApp y teléfono
    - Mensaje persuasivo
 
-7. **Footer Completo**
+7. **Formulario de Contacto**
+   - Campos para nombre, email, teléfono y mensaje
+   - Validación en el navegador con mensajes de error
+   - Botón de envío estilizado
+
+8. **Footer Completo**
    - Información de contacto
    - Enlaces a redes sociales
    - Horarios de atención
@@ -92,7 +97,7 @@ Una landing page moderna y responsive para una empresa especializada en fabricac
 - **Scroll Suave**: Navegación fluida entre secciones
 - **Animaciones**: Efectos de entrada al hacer scroll
 - **Enlaces Directos**: Integración con WhatsApp y teléfono
-- **Validación de Formularios**: Validación de email y teléfono
+- **Formulario de Contacto**: Validación de email y teléfono
 - **Tracking de Eventos**: Seguimiento de interacciones del usuario
 - **Lazy Loading**: Carga optimizada de imágenes
 - **Accesibilidad**: Navegación por teclado y gestión del foco
