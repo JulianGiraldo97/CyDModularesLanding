@@ -250,8 +250,8 @@ function initContactForm() {
 
             const data = {
                 name: form.name.value,
-                email: form.email.value,
-                phone: form.phone.value
+                phone: form.phone.value,
+                message: form.message ? form.message.value : ''
             };
 
             const errors = validateForm(data);
@@ -259,11 +259,18 @@ function initContactForm() {
             if (errors.length > 0) {
                 showMessage(errors.join('\n'), 'error');
             } else {
-                showMessage('\u00a1Mensaje enviado con \u00e9xito!');
+                var text = 'Hola, soy ' + data.name + '.' +
+                    (data.phone ? ' Mi contacto: ' + data.phone + '.' : '') +
+                    (data.message ? ' Necesito: ' + data.message : '');
+                var url = 'https://wa.me/573186997492?text=' + encodeURIComponent(text);
+                window.open(url, '_blank', 'noopener');
+                showMessage('\u00a1Abriendo WhatsApp!');
                 form.reset();
             }
         });
     }
+}
+
 // Export for testing in Node environments
 if (typeof module !== 'undefined' && module.exports) {
     module.exports.formatPhoneNumber = formatPhoneNumber;
@@ -386,6 +393,29 @@ function initFocusManagement() {
     });
 }
 
+// ===== FAQ ACORDEÓN =====
+function initFAQ() {
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const isOpen = this.getAttribute('aria-expanded') === 'true';
+
+            // Cerrar todos
+            questions.forEach(function(q) {
+                q.setAttribute('aria-expanded', 'false');
+                q.nextElementSibling.classList.remove('open');
+            });
+
+            // Abrir el clickeado si estaba cerrado
+            if (!isOpen) {
+                this.setAttribute('aria-expanded', 'true');
+                answer.classList.add('open');
+            }
+        });
+    });
+}
+
 // ===== INICIALIZACIÓN COMPLETA =====
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializar todas las funcionalidades
@@ -399,12 +429,12 @@ document.addEventListener('DOMContentLoaded', function() {
     initLazyLoading();
     initKeyboardNavigation();
     initFocusManagement();
-    
+    initFAQ();
+
     // Precargar recursos críticos
     preloadCriticalResources();
-    
-    // Mostrar mensaje de carga completa
-    console.log('🚀 CyD Modulares - Landing Page cargada completamente');
+
+    console.log('CyD Modulares - Landing Page cargada');
 });
 
 // ===== MANEJO DE ERRORES =====
